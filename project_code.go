@@ -499,3 +499,20 @@ func main() {
 	  }else{
 		 fmt.Println("Incorrect")
 }
+//Stores the points of questions the user has gotten correct.
+anything := 7
+//if the user is in the eligible grade the program continues them and they get their first question
+  //Prints out the percentage to a whole number wihout the decimal point by rounding it.
+  fmt.Printf("You scored %v out of %v", questionscorrect,anything) 
+  percent := (float32(questionscorrect) / float32(anything))*100
+  fmt.Printf("\nYou have %.0f%%\n", percent)
+//Prints out a message in accordance with the percenatge the user has accumulated from the short quiz
+  if percent < 20{
+    fmt.Println("You can do better, don't give up")
+  }else if percent > 50{
+    fmt.Println("Good job trying hard")
+  } else if percent > 100{
+    fmt.Println("Excellent")
+  }
+  fmt.Println(RED+"The End")
+ }
